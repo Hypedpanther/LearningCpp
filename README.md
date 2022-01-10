@@ -1,2 +1,2 @@
 # LearningCpp
-Learning C++ with w3schools.
+Learning C++ with W3Schools 
