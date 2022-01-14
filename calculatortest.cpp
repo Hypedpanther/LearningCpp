@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// This is a simple calculator program
+// This is a simple calculator program.
 int main()
 {
     int num1, num2;
@@ -15,8 +15,12 @@ int main()
     else if (op == '*')
         cout << num1 << " * " << num2 << " = " << num1 * num2 << endl;
     else if (op == '/')
-        cout << num1 << " / " << num2 << " = " << num1 / num2 << endl;
+        if (num2 != 0)
+            cout << num1 << " / " << num2 << " = " << num1 / num2 << endl;
+        else
+            cout << "Division by zero is not allowed." << endl;
     else
         cout << "Invalid operator" << endl;
+    
     return 0;
 }
